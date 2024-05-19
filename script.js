@@ -1,7 +1,10 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
-  const lowerStr = str.toLowerCase();
-  const lowerSubStr = subStr.toLowerCase();
+  if (s1 === '' || s2 === '') {
+    return -1;
+  }
+  
+  const lowerStr = s1.toLowerCase();
+  const lowerSubStr = s2.toLowerCase();
   
   for (let i = 0; i <= lowerStr.length - lowerSubStr.length; i++) {
     let found = true;
@@ -17,6 +20,7 @@ function indexOfIgnoreCase(s1, s2) {
   }
   return -1;
 }
+
 
 
 // Please do not change the code below
